@@ -1,9 +1,16 @@
 import React from "react";
+import { store } from "./store/store";
+import { Provider } from "react-redux";
+import { AppRouter } from "./routers/AppRouter";
+import { GlobalStyle } from "./styles/GlobalStyle";
 
-export const ModalApp = () => {
+const ModalApp = () => {
   return (
-    <div>
-      <h1>Welcome Modal App</h1>
-    </div>
+    <Provider store={store}>
+      <GlobalStyle />
+      <AppRouter />
+    </Provider>
   );
 };
+
+export default ModalApp;
