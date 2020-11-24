@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import {
   space,
   layout,
@@ -10,8 +10,17 @@ import {
   position,
 } from "styled-system";
 
+/* 
+ Animation fadeIn
+*/
+const FadeIn = keyframes`
+from { opacity: 0; }
+to   { opacity: 1; }
+`;
+
 /** Style of a container */
 const ContainerStyle = styled.div`
+  animation: ${FadeIn} 0.5s 0s both;
   ${layout}
   ${position}
   ${space}
@@ -19,25 +28,13 @@ const ContainerStyle = styled.div`
 `;
 /** Style of a panel with boder and shadow*/
 const PanelStyle = styled.div`
+  animation: ${FadeIn} 0.5s 0s both;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   ${color}
   ${border}
   ${space}
   ${layout}
   ${typography}
-`;
-
-/** Style of card placeholder */
-const PlaceHolderStyle = styled.div`
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: grey;
-  width: 400px;
-  height: 400px;
-  opacity: 0.5;
-  ${color}
-  ${border} 
-  ${space} 
-  ${layout};
 `;
 
 /** Style of text */
@@ -98,22 +95,6 @@ const ImageStyle = styled.img`
   ${space}
 `;
 
-/** Style of Scroll*/
-const ScrollContainer = styled.div`
-  max-height: 90vh;
-  overflow-y: scroll;
-`;
-
-/** Style of span **/
-const SpanStyle = styled.span`
-  ${border}
-  ${shadow}
-  ${space}
-  ${typography}
-  ${color}
-  display:table;
-`;
-
 /** Style of Navbar List */
 const NavbarList = styled.ul`
   list-style-type: none;
@@ -149,24 +130,36 @@ NavbarElement.defaultProps = {
   float: "left",
 };
 
-/* Style of Container List
- */
-const ContainerList = styled.ul`
-  ${space}
-  ${color}
-  ${layout}
-  ${border}
-  ${layout}
+const FabStyle = styled.button`
+  animation: ${FadeIn} 0.5s 0s both;
+  border-radius: 100%;
+  font-size: 50px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  background-color: transparent;
+  color: white;
 `;
 
-/* Style of Elements of a list
- */
-const ListElement = styled.li`
-  ${space}
-  ${color}
-  ${layout}
-  ${typography}
-  ${shadow}
+/* 
+ Style of a image container
+*/
+const ImgContainer = styled.div`
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+`;
+
+/* 
+ Style of a text in an image
+*/
+const ImgText = styled(TextStyle)`
+  position: absolute;
+  display: inline-block;
+  left: 8%;
+  top: 80%;
 `;
 
 export {
@@ -177,11 +170,9 @@ export {
   InputStyle,
   ButtonStyle,
   ImageStyle,
-  ScrollContainer,
-  PlaceHolderStyle,
-  SpanStyle,
+  ImgContainer,
+  ImgText,
   NavbarList,
   NavbarElement,
-  ContainerList,
-  ListElement,
+  FabStyle,
 };

@@ -4,6 +4,8 @@ import { Navbar } from "../components/ui/Navbar";
 import { HomeScreen } from "../components/home/HomeScreen";
 import { NotesScreen } from "../components/notes/NotesScreen";
 
+/* Routes of navbar(logged in)
+ */
 export const DashboardRoutes = () => {
   return (
     <>

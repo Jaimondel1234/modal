@@ -10,4 +10,5 @@ export const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         font-family: "Times New Roman", Times, serif;
     }
+
 `;

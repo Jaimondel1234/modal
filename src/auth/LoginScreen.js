@@ -8,6 +8,8 @@ import {
   InputStyle,
 } from "../styles/core";
 import styled from "styled-components";
+import { useDispatch } from "react-redux";
+import { authLogin } from "../actions/auth";
 
 /** Style of input of login */
 const LoginInputStyle = styled(InputStyle)`
@@ -23,6 +25,7 @@ const LoginInputStyle = styled(InputStyle)`
   Component that displays the login screen
 */
 export const LoginScreen = () => {
+  const dispatch = useDispatch();
   const [formValues, handleInputChange] = useForm({
     email: "admin@gmail.com",
     password: "admin",
@@ -32,7 +35,8 @@ export const LoginScreen = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    dispatch(loginRequest(email, password));
+    dispatch(authLogin(email, password));
+    localStorage.setItem("user", JSON.stringify({ email, password }));
   };
 
   return (
