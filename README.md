@@ -1,6 +1,6 @@
 # Notes App
 
-** Notes App ** allows you to create, modify and delete notes with images
+**Notes App** allows you to create, modify and delete notes with images
 
 ## Login
 
