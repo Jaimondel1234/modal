@@ -25,6 +25,20 @@ The upper buttons on the note screen will allow you to sort the items in the lis
 
 Card information will be stored in LocalStorage and Redux.
 
+## Get Started
+
+### Dev
+
+yarn dev
+
+### Prod : Create Build
+
+yarn prod
+
+### Tests
+
+yarn test
+
 ## Technologies
 
 ### React and Redux

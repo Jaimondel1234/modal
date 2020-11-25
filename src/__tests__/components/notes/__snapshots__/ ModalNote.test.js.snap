@@ -11,6 +11,7 @@ exports[`Test <ModalNote/> it must be displayed correctly 1`] = `
         style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(255, 255, 255, 0.75);"
       >
         <div
+          aria-modal="true"
           class="ReactModal__Content ReactModal__Content--after-open"
           role="dialog"
           style="position: absolute; top: 50%; left: 50%; border: 1px solid #ccc; background: rgb(255, 255, 255); overflow: auto; border-radius: 4px; outline: none; padding: 50px; margin-right: -50%; transform: translate(-50%, -50%); width: 50vw;"
@@ -82,6 +83,7 @@ exports[`Test <ModalNote/> it must be displayed correctly 1`] = `
     }
   >
     <div
+      aria-modal={true}
       className="ReactModal__Content ReactModal__Content--after-open"
       onClick={[Function]}
       onKeyDown={[Function]}
