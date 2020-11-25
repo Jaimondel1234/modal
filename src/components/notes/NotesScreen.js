@@ -4,7 +4,7 @@ import { ContainerStyle } from "../../styles/core";
 import { AddNewFab } from "../ui/AddNewFab";
 import { ModalNote } from "./ModalNote";
 import { useSelector } from "react-redux";
-import { ButtonsSelector } from "./ButtonsSelector";
+import { SelectionButtons } from "./SelectionButtons";
 
 /*
   Component of Screen Notes
@@ -20,7 +20,7 @@ export const NotesScreen = () => {
   return (
     <>
       <ContainerStyle mt='20px'>
-        <ButtonsSelector />
+        <SelectionButtons />
         <NoteList />
         <AddNewFab />
       </ContainerStyle>

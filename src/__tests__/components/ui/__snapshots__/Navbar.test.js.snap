@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Navbar/> it must be displayed correctly 1`] = `
+<ul
+  className="core__NavbarList-sc-1mkz20q-7 giEOfX"
+>
+  <li
+    className="core__NavbarElement-sc-1mkz20q-8 cfUFXr"
+  >
+    <a
+      href="/home"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+  </li>
+  <li
+    className="core__NavbarElement-sc-1mkz20q-8 cfUFXr"
+  >
+    <a
+      href="/notes"
+      onClick={[Function]}
+    >
+      Notes
+    </a>
+  </li>
+  <li
+    className="core__NavbarElement-sc-1mkz20q-8 fMsjzQ"
+  >
+    <button
+      className="core__ButtonStyle-sc-1mkz20q-5 Navbar__ButtonLogoutStyle-x8fbn3-0 jVbggV dLcfzz"
+      onClick={[Function]}
+    >
+      Logout
+    </button>
+  </li>
+</ul>
+`;

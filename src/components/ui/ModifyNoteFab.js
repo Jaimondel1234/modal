@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { faPencilAlt } from "@fortawesome/free-solid-svg-icons";
+import { faPencilAlt } from "@fortawesome/free-solid-svg-icons/faPencilAlt";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useDispatch } from "react-redux";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { noteSetActive } from "../../actions/note";
 import { uiOpenModal } from "../../actions/ui";
 import { FabStyle } from "../../styles/core";

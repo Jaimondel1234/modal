@@ -15,6 +15,7 @@ import { ModifyNoteFab } from "../ui/ModifyNoteFab";
 */
 export const NoteCard = ({ ...note }) => {
   const [isMouveIn, setIsMouseIn] = useState(false);
+
   const { id, title, imgUrl, description } = note;
 
   const handleMouseOver = () => {

@@ -18,21 +18,13 @@ const customStyles = {
   },
 };
 
-/** Style of modal input */
-const ModalInputStyle = styled(InputStyle)`
-  border-radius: 7px;
-  font-size: 30px;
-  margin-bottom: 20px;
-  width: 95%;
-  padding: 15px;
-  padding-left: 25px;
-`;
-
 /**
  * Component of modal to create or update a note
  */
 export const ModalNote = () => {
-  Modal.setAppElement("#root");
+  if (process.env.NODE_ENV !== "test") {
+    Modal.setAppElement("#root");
+  }
   const { modalOpen } = useSelector((state) => state.ui);
   const { activeNote } = useSelector((state) => state.notes);
 
@@ -41,7 +33,7 @@ export const ModalNote = () => {
       isOpen={modalOpen}
       style={customStyles}
       closeTimeoutMS={200}
-      ariaHideApp={false}
+      ariaHideApp={!(process.env.NODE_ENV === "test")}
     >
       <TextStyle fontSize='60px' fontWeight='bold' textAlign='center'>
         {activeNote ? "Change your Note" : "Create your Note"}

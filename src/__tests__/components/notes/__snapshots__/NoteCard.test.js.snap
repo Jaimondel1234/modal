@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <NoteCard/> it must be displayed correctly 1`] = `
+<div
+  className="core__PanelStyle-sc-1mkz20q-1 bRoYup"
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+  width="450px"
+>
+  <div
+    className="core__ImgContainer-sc-1mkz20q-10 iknRaK"
+  >
+    <img
+      className="core__ImageStyle-sc-1mkz20q-6 kvKmGh"
+      height="400px"
+      onError={[Function]}
+      src=""
+      title="first element"
+      width="450px"
+    />
+    <div
+      className="core__TextStyle-sc-1mkz20q-2 core__ImgText-sc-1mkz20q-11 gGsHdO fgsaRG"
+      color="white"
+      fontSize="30px"
+      fontWeight="bold"
+    >
+      first element
+    </div>
+  </div>
+  <div
+    className="core__TextStyle-sc-1mkz20q-2 lpdOGy"
+    fontSize="25px"
+  >
+    description first element
+  </div>
+</div>
+`;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <SelectionButtons/> it must be displayed correctly 1`] = `
+<div
+  className="core__FlexStyle-sc-1mkz20q-3 hkFmaH"
+>
+  <button
+    className="core__ButtonStyle-sc-1mkz20q-5 SelectionButtons__SelectorButtonStyle-sc-11fith9-0 QFcyH kzXbYk"
+    onClick={[Function]}
+  >
+    ASC
+  </button>
+  <button
+    className="core__ButtonStyle-sc-1mkz20q-5 SelectionButtons__SelectorButtonStyle-sc-11fith9-0 QFcyH kzXbYk"
+    onClick={[Function]}
+  >
+    DESC
+  </button>
+  <button
+    className="core__ButtonStyle-sc-1mkz20q-5 SelectionButtons__SelectorButtonStyle-sc-11fith9-0 QFcyH kzXbYk"
+    onClick={[Function]}
+  >
+    A-Z
+  </button>
+  <button
+    className="core__ButtonStyle-sc-1mkz20q-5 SelectionButtons__SelectorButtonStyle-sc-11fith9-0 QFcyH kzXbYk"
+    onClick={[Function]}
+  >
+    Z-A
+  </button>
+</div>
+`;

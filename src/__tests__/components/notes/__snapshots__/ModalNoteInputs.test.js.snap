@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <ModalNoteInputs/> it must be displayed correctly 1`] = `
+<form
+  className="core__FlexStyle-sc-1mkz20q-3 iTHhnD"
+  onSubmit={[Function]}
+>
+  <input
+    autoComplete="off"
+    className="core__InputStyle-sc-1mkz20q-4 ModalNoteInputs__ModalInputStyle-sc-18t1odo-0 bMnAXg ksglXK"
+    name="title"
+    onChange={[Function]}
+    placeholder="Title"
+    type="text"
+    value=""
+  />
+  <textarea
+    className="core__InputStyle-sc-1mkz20q-4 ModalNoteInputs__ModalInputStyle-sc-18t1odo-0 fsMNMP ksglXK"
+    name="description"
+    onChange={[Function]}
+    placeholder="Description"
+    rows="5"
+    type="text"
+    value=""
+  />
+  <input
+    autoComplete="off"
+    className="core__InputStyle-sc-1mkz20q-4 ModalNoteInputs__ModalInputStyle-sc-18t1odo-0 kivKiO ksglXK"
+    name="imgUrl"
+    onChange={[Function]}
+    placeholder="Imagen (Url)"
+    type="text"
+    value=""
+  />
+  <button
+    className="core__ButtonStyle-sc-1mkz20q-5 cgFcMK"
+    fontSize="30px"
+    fontWeight="bold"
+    letterSpacing="3px"
+    type="submit"
+    width="100%"
+  >
+    Save
+  </button>
+</form>
+`;

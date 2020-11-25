@@ -1,5 +1,8 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const LodashModuleReplacementPlugin = require("lodash-webpack-plugin");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
 
 module.exports = {
   context: __dirname,
@@ -18,7 +21,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: [/node_modules/],
         use: "babel-loader",
       },
       {
@@ -37,6 +40,10 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: path.resolve(__dirname, "public/index.html"),
       filename: "index.html",
+    }),
+    new BundleAnalyzerPlugin({
+      analyzerMode: "static",
+      openAnalyzer: true,
     }),
   ],
 };

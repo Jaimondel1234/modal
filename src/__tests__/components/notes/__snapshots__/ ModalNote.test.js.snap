@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <ModalNote/> it must be displayed correctly 1`] = `
+<Portal
+  containerInfo={
+    <div
+      class="ReactModalPortal"
+    >
+      <div
+        class="ReactModal__Overlay ReactModal__Overlay--after-open"
+        style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(255, 255, 255, 0.75);"
+      >
+        <div
+          class="ReactModal__Content ReactModal__Content--after-open"
+          role="dialog"
+          style="position: absolute; top: 50%; left: 50%; border: 1px solid #ccc; background: rgb(255, 255, 255); overflow: auto; border-radius: 4px; outline: none; padding: 50px; margin-right: -50%; transform: translate(-50%, -50%); width: 50vw;"
+          tabindex="-1"
+        >
+          <div
+            class="core__TextStyle-sc-1mkz20q-2 kA-dAxr"
+            font-size="60px"
+            font-weight="bold"
+          >
+            Create your Note
+          </div>
+          <hr />
+          <form
+            class="core__FlexStyle-sc-1mkz20q-3 iTHhnD"
+          >
+            <input
+              autocomplete="off"
+              class="core__InputStyle-sc-1mkz20q-4 ModalNoteInputs__ModalInputStyle-sc-18t1odo-0 bMnAXg ksglXK"
+              name="title"
+              placeholder="Title"
+              type="text"
+              value=""
+            />
+            <textarea
+              class="core__InputStyle-sc-1mkz20q-4 ModalNoteInputs__ModalInputStyle-sc-18t1odo-0 fsMNMP ksglXK"
+              name="description"
+              placeholder="Description"
+              rows="5"
+              type="text"
+            />
+            <input
+              autocomplete="off"
+              class="core__InputStyle-sc-1mkz20q-4 ModalNoteInputs__ModalInputStyle-sc-18t1odo-0 kivKiO ksglXK"
+              name="imgUrl"
+              placeholder="Imagen (Url)"
+              type="text"
+              value=""
+            />
+            <button
+              class="core__ButtonStyle-sc-1mkz20q-5 cgFcMK"
+              font-size="30px"
+              font-weight="bold"
+              letter-spacing="3px"
+              type="submit"
+              width="100%"
+            >
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  }
+>
+  <div
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="ReactModal__Content ReactModal__Content--after-open"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={
+        Object {
+          "WebkitOverflowScrolling": "touch",
+          "background": "#fff",
+          "border": "1px solid #ccc",
+          "borderRadius": "4px",
+          "bottom": "auto",
+          "left": "50%",
+          "marginRight": "-50%",
+          "outline": "none",
+          "overflow": "auto",
+          "padding": "50px",
+          "position": "absolute",
+          "right": "auto",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+          "width": "50vw",
+        }
+      }
+      tabIndex="-1"
+    >
+      <div
+        className="core__TextStyle-sc-1mkz20q-2 kA-dAxr"
+        fontSize="60px"
+        fontWeight="bold"
+      >
+        Create your Note
+      </div>
+      <hr />
+      <form
+        className="core__FlexStyle-sc-1mkz20q-3 iTHhnD"
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="core__InputStyle-sc-1mkz20q-4 ModalNoteInputs__ModalInputStyle-sc-18t1odo-0 bMnAXg ksglXK"
+          name="title"
+          onChange={[Function]}
+          placeholder="Title"
+          type="text"
+          value=""
+        />
+        <textarea
+          className="core__InputStyle-sc-1mkz20q-4 ModalNoteInputs__ModalInputStyle-sc-18t1odo-0 fsMNMP ksglXK"
+          name="description"
+          onChange={[Function]}
+          placeholder="Description"
+          rows="5"
+          type="text"
+          value=""
+        />
+        <input
+          autoComplete="off"
+          className="core__InputStyle-sc-1mkz20q-4 ModalNoteInputs__ModalInputStyle-sc-18t1odo-0 kivKiO ksglXK"
+          name="imgUrl"
+          onChange={[Function]}
+          placeholder="Imagen (Url)"
+          type="text"
+          value=""
+        />
+        <button
+          className="core__ButtonStyle-sc-1mkz20q-5 cgFcMK"
+          fontSize="30px"
+          fontWeight="bold"
+          letterSpacing="3px"
+          type="submit"
+          width="100%"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</Portal>
+`;

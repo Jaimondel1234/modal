@@ -15,7 +15,7 @@ const SelectorButtonStyle = styled(ButtonStyle)`
 /**
  * It shows the buttons of selections (asc, desc, ..)
  */
-export const ButtonsSelector = () => {
+export const SelectionButtons = () => {
   const dispatch = useDispatch();
 
   const handleClick = (listMode) => () => {
