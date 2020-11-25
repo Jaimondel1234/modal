@@ -1,6 +1,6 @@
 # Notes App
 
-** Notes App ** allows you to create, modify and delete notes with images
+**Notes App** allows you to create, modify and delete notes with images
 
 ## Login
 
@@ -18,10 +18,10 @@ If a card is modified, when the pencil button is pressed, the "active note" fiel
 
 The upper buttons on the note screen will allow you to sort the items in the list:
 
--ASC: Older to Newer (Default)
--ESCR: From Newer to Older
--A-Z: Alphabetically by title in increasing order
--Z-A: Alphabetically by title in descending order
+**ASC**: Older to Newer (Default).
+**DESC** From Newer to Older.
+**A-Z**: Alphabetically by title in increasing order.
+**Z-A**: Alphabetically by title in descending order.
 
 Card information will be stored in LocalStorage and Redux.
 
