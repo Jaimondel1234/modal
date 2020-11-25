@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { NavbarList, NavbarElement, ButtonStyle } from "../../styles/core";
-import styled from "styled-components";
-import { useDispatch } from "react-redux";
-import { noteReset } from "../../actions/note";
-import { authLogout } from "../../actions/auth";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { NavbarList, NavbarElement, ButtonStyle } from '../../styles/core';
+import styled from 'styled-components';
+import { useDispatch } from 'react-redux';
+import { noteReset } from '../../actions/note';
+import { authLogout } from '../../actions/auth';
 
 const ButtonLogoutStyle = styled(ButtonStyle)`
   display: block;
@@ -23,8 +23,8 @@ export const Navbar = () => {
   const dispatch = useDispatch();
 
   const handleLogout = () => {
-    localStorage.removeItem("user");
-    localStorage.removeItem("notes");
+    localStorage.removeItem('user');
+    localStorage.removeItem('notes');
     dispatch(authLogout());
     dispatch(noteReset());
   };

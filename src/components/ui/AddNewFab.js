@@ -1,11 +1,11 @@
-import React from "react";
-import { faPlus } from "@fortawesome/free-solid-svg-icons/faPlus";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import styled from "styled-components";
-import { useDispatch } from "react-redux";
-import { uiOpenModal } from "../../actions/ui";
-import { FabStyle } from "../../styles/core";
+import styled from 'styled-components';
+import { useDispatch } from 'react-redux';
+import { uiOpenModal } from '../../actions/ui';
+import { FabStyle } from '../../styles/core';
 
 const PlusFabStyle = styled(FabStyle)`
   border-radius: 100%;

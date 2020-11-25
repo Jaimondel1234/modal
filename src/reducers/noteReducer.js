@@ -1,9 +1,9 @@
-import { types } from "../types/types";
+import { types } from '../types/types';
 
 const initialState = {
-  notes: JSON.parse(localStorage.getItem("notes")) || [],
+  notes: JSON.parse(localStorage.getItem('notes')) || [],
   activeNote: null,
-  listMode: "oldToNew",
+  listMode: 'oldToNew',
 };
 
 /* 
@@ -30,7 +30,7 @@ export const noteReducer = (state = initialState, action) => {
       return {
         ...state,
         notes: state.notes.map((note) =>
-          note.id === action.note.id ? action.note : note
+          note.id === action.note.id ? action.note : note,
         ),
       };
     case types.noteSetListMode:
@@ -42,7 +42,7 @@ export const noteReducer = (state = initialState, action) => {
       return {
         notes: [],
         activeNote: null,
-        listMode: "oldToNew",
+        listMode: 'oldToNew',
       };
 
     default:

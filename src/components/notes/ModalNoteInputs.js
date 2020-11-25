@@ -1,11 +1,11 @@
-import React from "react";
-import Swal from "sweetalert2";
-import { noteAddNew, noteUpdate, noteSetActive } from "../../actions/note";
-import { useForm } from "../../hooks/useForm";
-import styled from "styled-components";
-import { InputStyle, FlexStyle, ButtonStyle } from "../../styles/core";
-import { useDispatch, useSelector } from "react-redux";
-import { uiCloseModal } from "../../actions/ui";
+import React from 'react';
+import Swal from 'sweetalert2';
+import { noteAddNew, noteUpdate, noteSetActive } from '../../actions/note';
+import { useForm } from '../../hooks/useForm';
+import styled from 'styled-components';
+import { InputStyle, FlexStyle, ButtonStyle } from '../../styles/core';
+import { useDispatch, useSelector } from 'react-redux';
+import { uiCloseModal } from '../../actions/ui';
 
 /** Style of modal input */
 const ModalInputStyle = styled(InputStyle)`
@@ -24,9 +24,9 @@ export const ModalNoteInputs = () => {
   const dispatch = useDispatch();
   const { activeNote } = useSelector((state) => state.notes);
   const defaultEvent = {
-    title: "",
-    description: "",
-    imgUrl: "",
+    title: '',
+    description: '',
+    imgUrl: '',
   };
 
   const initEvent = activeNote || defaultEvent;
@@ -50,11 +50,11 @@ export const ModalNoteInputs = () => {
   const handleSubmitForm = (e) => {
     e.preventDefault();
     if (title.trim().length === 0) {
-      Swal.fire("The title is required", "", "error");
+      Swal.fire('The title is required', '', 'error');
     } else if (description.trim().length === 0) {
-      Swal.fire("The description is required", "", "error");
+      Swal.fire('The description is required', '', 'error');
     } else {
-      Swal.fire("Note Saved", "", "success");
+      Swal.fire('Note Saved', '', 'success');
       closeModal();
     }
   };

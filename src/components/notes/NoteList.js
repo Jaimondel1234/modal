@@ -1,9 +1,9 @@
-import React from "react";
-import { FlexStyle } from "../../styles/core";
-import map from "lodash/map";
-import { NoteCard } from "./NoteCard";
-import { useSelector } from "react-redux";
-import { getListByMode } from "../../helpers/helpers";
+import React from 'react';
+import { FlexStyle } from '../../styles/core';
+import map from 'lodash/map';
+import { NoteCard } from './NoteCard';
+import { useSelector } from 'react-redux';
+import { getListByMode } from '../../helpers/helpers';
 
 /*
  Cards List

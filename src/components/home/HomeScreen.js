@@ -1,5 +1,5 @@
-import React from "react";
-import { PanelStyle, TextStyle, ContainerStyle } from "../../styles/core";
+import React from 'react';
+import { PanelStyle, TextStyle, ContainerStyle } from '../../styles/core';
 
 /*
   Component that displays the home screen

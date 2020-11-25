@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Redirect } from "react-router-dom";
-import { PublicRoute } from "./PublicRoute";
-import { PrivateRoute } from "./PrivateRoute";
-import { LoginScreen } from "../auth/LoginScreen";
-import { DashboardRoutes } from "./DashboardRoute";
-import { authLogin } from "../actions/auth";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
+import { PublicRoute } from './PublicRoute';
+import { PrivateRoute } from './PrivateRoute';
+import { LoginScreen } from '../auth/LoginScreen';
+import { DashboardRoutes } from './DashboardRoute';
+import { authLogin } from '../actions/auth';
+import { useDispatch, useSelector } from 'react-redux';
 
 /* AppRouter (root)
  */
@@ -16,7 +16,7 @@ export function AppRouter() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const user = JSON.parse(localStorage.getItem('user'));
     if (user) {
       dispatch(authLogin(user.email, user.password));
     }

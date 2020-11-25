@@ -1,11 +1,11 @@
-import React from "react";
-import { NotesScreen } from "../../../components/notes/NotesScreen";
-import { notesListMock } from "../../../__mocks__/notesListMock";
-import configureStore from "redux-mock-store";
-import { mount } from "enzyme";
-import { Provider } from "react-redux";
+import React from 'react';
+import { NotesScreen } from '../../../components/notes/NotesScreen';
+import { notesListMock } from '../../../__mocks__/notesListMock';
+import configureStore from 'redux-mock-store';
+import { mount } from 'enzyme';
+import { Provider } from 'react-redux';
 
-describe("Test <NotesScreen/>", () => {
+describe('Test <NotesScreen/>', () => {
   const mockStore = configureStore([]);
   const initState = {
     notes: {
@@ -21,12 +21,12 @@ describe("Test <NotesScreen/>", () => {
   const wrapper = mount(
     <Provider store={store}>
       <NotesScreen />
-    </Provider>
+    </Provider>,
   );
-  test("it must be displayed correctly", () => {
+  test('it must be displayed correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
-  test("if modal open true, the modal must be showed", () => {
-    expect(wrapper.find("ModalNote").at(0).exists()).toBe(true);
+  test('if modal open true, the modal must be showed', () => {
+    expect(wrapper.find('ModalNote').at(0).exists()).toBe(true);
   });
 });

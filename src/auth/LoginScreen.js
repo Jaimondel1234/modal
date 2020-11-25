@@ -1,15 +1,15 @@
-import React from "react";
-import { useForm } from "../hooks/useForm";
+import React from 'react';
+import { useForm } from '../hooks/useForm';
 import {
   FlexStyle,
   PanelStyle,
   ButtonStyle,
   TextStyle,
   InputStyle,
-} from "../styles/core";
-import styled from "styled-components";
-import { useDispatch } from "react-redux";
-import { authLogin } from "../actions/auth";
+} from '../styles/core';
+import styled from 'styled-components';
+import { useDispatch } from 'react-redux';
+import { authLogin } from '../actions/auth';
 
 /** Style of input of login */
 const LoginInputStyle = styled(InputStyle)`
@@ -27,8 +27,8 @@ const LoginInputStyle = styled(InputStyle)`
 export const LoginScreen = () => {
   const dispatch = useDispatch();
   const [formValues, handleInputChange] = useForm({
-    email: "admin@gmail.com",
-    password: "admin",
+    email: 'admin@gmail.com',
+    password: 'admin',
   });
 
   const { email, password } = formValues;
@@ -36,7 +36,7 @@ export const LoginScreen = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     dispatch(authLogin(email, password));
-    localStorage.setItem("user", JSON.stringify({ email, password }));
+    localStorage.setItem('user', JSON.stringify({ email, password }));
   };
 
   return (

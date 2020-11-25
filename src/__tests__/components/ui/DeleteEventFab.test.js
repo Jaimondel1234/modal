@@ -1,11 +1,11 @@
-import React from "react";
-import { mount } from "enzyme";
-import configureStore from "redux-mock-store";
-import { Provider } from "react-redux";
-import { DeleteEventFab } from "../../../components/ui/DeleteEventFab";
-import { noteDelete } from "../../../actions/note";
+import React from 'react';
+import { mount } from 'enzyme';
+import configureStore from 'redux-mock-store';
+import { Provider } from 'react-redux';
+import { DeleteEventFab } from '../../../components/ui/DeleteEventFab';
+import { noteDelete } from '../../../actions/note';
 
-describe("Test <DeleteEventFab/>", () => {
+describe('Test <DeleteEventFab/>', () => {
   const mockStore = configureStore([]);
   const initState = {};
 
@@ -14,13 +14,13 @@ describe("Test <DeleteEventFab/>", () => {
   const wrapper = mount(
     <Provider store={store}>
       <DeleteEventFab noteId={1234} />
-    </Provider>
+    </Provider>,
   );
-  test("it must be displayed correctly", () => {
+  test('it must be displayed correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
-  test("if the button is clicked, the note delete action must be dispatched", () => {
-    wrapper.find("button").prop("onClick")();
+  test('if the button is clicked, the note delete action must be dispatched', () => {
+    wrapper.find('button').prop('onClick')();
     expect(store.dispatch).toHaveBeenCalledWith(noteDelete(1234));
   });
 });

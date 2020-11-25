@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   PanelStyle,
   ImageStyle,
   TextStyle,
   ImgText,
   ImgContainer,
-} from "../../styles/core";
-import PropTypes from "prop-types";
-import { DeleteEventFab } from "../ui/DeleteEventFab";
-import { ModifyNoteFab } from "../ui/ModifyNoteFab";
+} from '../../styles/core';
+import PropTypes from 'prop-types';
+import { DeleteEventFab } from '../ui/DeleteEventFab';
+import { ModifyNoteFab } from '../ui/ModifyNoteFab';
 
 /*
  Card with the information of a note
@@ -45,7 +45,7 @@ export const NoteCard = ({ ...note }) => {
           onError={(e) => {
             e.target.onerror = null;
             e.target.src =
-              "https://www.escapadarural.com/blog/wp-content/uploads/2019/08/Playa-de-la-Tejita.-Tenerife.jpg";
+              'https://www.escapadarural.com/blog/wp-content/uploads/2019/08/Playa-de-la-Tejita.-Tenerife.jpg';
           }}
         />
         {isMouveIn && <DeleteEventFab noteId={id} />}

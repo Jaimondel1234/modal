@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { faPencilAlt } from "@fortawesome/free-solid-svg-icons/faPencilAlt";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useDispatch } from "react-redux";
-import styled from "styled-components";
-import { noteSetActive } from "../../actions/note";
-import { uiOpenModal } from "../../actions/ui";
-import { FabStyle } from "../../styles/core";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { faPencilAlt } from '@fortawesome/free-solid-svg-icons/faPencilAlt';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useDispatch } from 'react-redux';
+import styled from 'styled-components';
+import { noteSetActive } from '../../actions/note';
+import { uiOpenModal } from '../../actions/ui';
+import { FabStyle } from '../../styles/core';
 
 const PencilAltFabStyle = styled(FabStyle)`
   right: 8%;

@@ -1,11 +1,11 @@
-import React from "react";
-import { mount } from "enzyme";
-import configureStore from "redux-mock-store";
-import { Provider } from "react-redux";
-import { LoginScreen } from "../../auth/LoginScreen";
-import { types } from "../../types/types";
+import React from 'react';
+import { mount } from 'enzyme';
+import configureStore from 'redux-mock-store';
+import { Provider } from 'react-redux';
+import { LoginScreen } from '../../auth/LoginScreen';
+import { types } from '../../types/types';
 
-describe("Test <LoginScreen/>", () => {
+describe('Test <LoginScreen/>', () => {
   const mockStore = configureStore([]);
   const initState = {};
 
@@ -14,17 +14,17 @@ describe("Test <LoginScreen/>", () => {
   const wrapper = mount(
     <Provider store={store}>
       <LoginScreen />
-    </Provider>
+    </Provider>,
   );
-  test("it must be displayed correctly", () => {
+  test('it must be displayed correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
-  test("submitting the form, triggers the action to log", () => {
-    wrapper.find("form").prop("onSubmit")({ preventDefault: () => {} });
+  test('submitting the form, triggers the action to log', () => {
+    wrapper.find('form').prop('onSubmit')({ preventDefault: () => {} });
     expect(store.dispatch).toHaveBeenCalledWith({
       type: types.authLogin,
-      email: "admin@gmail.com",
-      password: "admin",
+      email: 'admin@gmail.com',
+      password: 'admin',
     });
   });
 });

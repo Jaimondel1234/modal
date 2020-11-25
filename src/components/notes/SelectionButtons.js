@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { FlexStyle, ButtonStyle } from "../../styles/core";
-import { useDispatch } from "react-redux";
-import { setListMode } from "../../actions/note";
+import React from 'react';
+import styled from 'styled-components';
+import { FlexStyle, ButtonStyle } from '../../styles/core';
+import { useDispatch } from 'react-redux';
+import { setListMode } from '../../actions/note';
 
 const SelectorButtonStyle = styled(ButtonStyle)`
   padding: 7px;
@@ -23,16 +23,16 @@ export const SelectionButtons = () => {
   };
   return (
     <FlexStyle alignItem='center' justifyContent='center' flexDirection='row'>
-      <SelectorButtonStyle onClick={handleClick("oldToNew")}>
+      <SelectorButtonStyle onClick={handleClick('oldToNew')}>
         ASC
       </SelectorButtonStyle>
-      <SelectorButtonStyle onClick={handleClick("newToOld")}>
+      <SelectorButtonStyle onClick={handleClick('newToOld')}>
         DESC
       </SelectorButtonStyle>
-      <SelectorButtonStyle onClick={handleClick("AToZ")}>
+      <SelectorButtonStyle onClick={handleClick('AToZ')}>
         A-Z
       </SelectorButtonStyle>
-      <SelectorButtonStyle onClick={handleClick("ZToA")}>
+      <SelectorButtonStyle onClick={handleClick('ZToA')}>
         Z-A
       </SelectorButtonStyle>
     </FlexStyle>

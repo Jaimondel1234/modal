@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { faTrash } from "@fortawesome/free-solid-svg-icons/faTrash";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useDispatch } from "react-redux";
-import styled from "styled-components";
-import { noteDelete } from "../../actions/note";
-import { FabStyle } from "../../styles/core";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { faTrash } from '@fortawesome/free-solid-svg-icons/faTrash';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useDispatch } from 'react-redux';
+import styled from 'styled-components';
+import { noteDelete } from '../../actions/note';
+import { FabStyle } from '../../styles/core';
 
 const TrashFabStyle = styled(FabStyle)`
   left: 8%;

@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 import {
   space,
   layout,
@@ -8,7 +8,7 @@ import {
   shadow,
   flexbox,
   position,
-} from "styled-system";
+} from 'styled-system';
 
 /* 
  Animation fadeIn
@@ -127,7 +127,7 @@ const NavbarElement = styled.li`
 `;
 
 NavbarElement.defaultProps = {
-  float: "left",
+  float: 'left',
 };
 
 const FabStyle = styled.button`

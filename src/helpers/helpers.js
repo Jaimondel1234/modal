@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import reverse from "lodash/reverse";
-import clone from "lodash/clone";
-import orderBy from "lodash/orderBy";
+import PropTypes from 'prop-types';
+import reverse from 'lodash/reverse';
+import clone from 'lodash/clone';
+import orderBy from 'lodash/orderBy';
 
 /*
   Function to get a list according to the list mode
@@ -9,14 +9,14 @@ import orderBy from "lodash/orderBy";
 
 export const getListByMode = (listMode, notes) => {
   switch (listMode) {
-    case "oldToNew":
+    case 'oldToNew':
       return notes;
-    case "newToOld":
+    case 'newToOld':
       return reverse(clone(notes));
-    case "AToZ":
-      return orderBy(notes, [(note) => note.title.toLowerCase()], ["asc"]);
-    case "ZToA":
-      return orderBy(notes, [(note) => note.title.toLowerCase()], ["desc"]);
+    case 'AToZ':
+      return orderBy(notes, [(note) => note.title.toLowerCase()], ['asc']);
+    case 'ZToA':
+      return orderBy(notes, [(note) => note.title.toLowerCase()], ['desc']);
     default:
       return notes;
   }
